@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./sprint1.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="https://gogagaholidays.in/images/logo_1.png" class="navbar-image" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link mr-3 active" href="#" id="packages">Packages<span class="sr-only">(current)</span></a>
+                <a class="nav-link mr-3" href="#" id="tours">Tours</a>
+                <a class="nav-link mr-3" href="#" id="help">Help</a>
+                <a class="nav-link mr-3" href="#" id="membership">Membership
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gem icon" viewBox="0 0 16 16">
+                        <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6zm11.386 3.785-1.806-2.41-.776 2.413zm-3.633.004.961-2.989H4.186l.963 2.995zM5.47 5.495 8 13.366l2.532-7.876zm-1.371-.999-.78-2.422-1.818 2.425zM1.499 5.5l5.113 6.817-2.192-6.82zm7.889 6.817 5.123-6.83-2.928.002z" />
+                    </svg>
+                </a>
+                <a class="nav-link mr-3" href="#" id="giftcards">Gift Cards
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gift-fill icon" viewBox="0 0 16 16">
+                        <path d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A3 3 0 0 1 3 2.506zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43zM9 3h2.932l.023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0zm6 4v7.5a1.5 1.5 0 0 1-1.5 1.5H9V7zM2.5 16A1.5 1.5 0 0 1 1 14.5V7h6v9z" />
+                    </svg>
+                </a>
+                <button class="profile-button p-1" type="button">
+                    <a class="nav-link navbar-toggler-icon" href="#"></a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                    </svg>
+                    <div class="dropdown-content">
+                        <p class="profile-content">Your Account</p>
+                        <p class="profile-content">Settings</p>
+                        <p class="profile-content">Logout</p>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="hill-image">
+        <div class="container-fluid p-4 mt-5">
+            <div class="row">
+                <div class="col-12 sub-container">
+                    <h1 class="heading">Discover Your Next Adventure</h1>
+                    <p class="description">Unlock your path to adventure, start your journey of discovery - where every destination awaits your exploration</p>
+                </div>
+                <form class="form sub-container p-4 pb-2 mt-0">
+                    <div class="col-12 mb-4">
+                        <button class="btn button package-button">Packages</button>
+                        <button class="btn button">Tours</button>
+                    </div>
+                    <div class="d-md-flex flex-row">
+                        <div class="col-12 col-md-2 col-lg-3 m-2 d-flex flex-column input-container destination">
+                            <label for="text" class="label-element">Destination</label>
+                            <input type="text" placeholder="Enter the city" class="input-element mr-2" id="text" />
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 d-md-none m-2 d-flex flex-column input-container">
+                            <div class="m-2 d-flex flex-row">
+                                <label for="checkin" class="label-element" style="text-align:left;">Check-in</label>
+                                <input type="date" class="input-element" id="checkin" />
+                            </div>
+                            <div class="m-2">
+                                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
+                                    <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278" />
+                                </svg>
+                                <label for="moon" class="label-element">1 Night</label>
+                            </div>
+                            <div class="m-2 d-flex flex-row">
+                                <label for="checkout" class="label-element p-2" style="text-align:left;">Check-out</label>
+                                <input type="date" class="input-element" id="checkout" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-5 col-lg-4 d-none d-md-block m-2 p-auto pt-2 input-container checklist">
+                            <div class="d-flex flex-row ">
+                                <div class=" d-flex flex-column ">
+                                    <label for="checkin" class="label-element">Check-in</label>
+                                    <input type="date" class="input-element" id="checkin" />
+                                </div>
+                                <div class="m-2 d-flex flex-column justify-content-center">
+                                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-fill mb-2" viewBox="0 0 16 16">
+                                        <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278" />
+                                    </svg>
+                                    <label for="moon" class="label-element">1Night</label>
+                                </div>
+                                <div class=" d-flex flex-column">
+                                    <label for="checkout" class="label-element">Check-out</label>
+                                    <input type="date" class="input-element" id="checkout" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-lg-3 m-2 d-flex flex-column input-container selectlist">
+                            <label for="select" class="label-element">Guests and Rooms</label>
+                            <select class="select form-select" aria-label="Default select example" id="select">
+                                <option value="" selected>2 adults, 0 children, 1 room</option>
+                                <option value="">2 adults, 1 children, 2 rooms</option>
+                                <option value="">3 adults, 2 children, 3 rooms</option>
+                            </select>
+                        </div>
+                        <div class="m-2 btn btn-dark" style="height:40px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 d-flex flex-row  mt-3">
+                        <p class="mr-3 star-content">Star Rating</p>
+                        <p class="mr-2 d-flex flex-row clicked-star">3<span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star star-icon" viewBox="0 0 16 16">
+                                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                                </svg></span>
+                        </p>
+                        <p class="mr-2 d-flex flex-row clicked-star">4<span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star star-icon" viewBox="0 0 16 16">
+                                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                                </svg></span>
+                        </p>
+                        <p class="mr-2 d-flex flex-row notclicked-star">5<span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star star-icon" viewBox="0 0 16 16">
+                                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                                </svg></span>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
